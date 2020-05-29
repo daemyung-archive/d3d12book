@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 4 Direct3D Initialization", "Chapter 4 Direct3D Initialization\Chapter 4 Direct3D Initialization.vcxproj", "{1F6B0417-6B61-4972-8DC9-0CC5AE18264E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 6 Drawing in Direct3D", "Chapter 6 Drawing in Direct3D\Chapter 6 Drawing in Direct3D.vcxproj", "{E093AE2C-2E85-4833-8292-6EC26BF57F5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{1F6B0417-6B61-4972-8DC9-0CC5AE18264E}.Release|x64.Build.0 = Release|x64
 		{1F6B0417-6B61-4972-8DC9-0CC5AE18264E}.Release|x86.ActiveCfg = Release|Win32
 		{1F6B0417-6B61-4972-8DC9-0CC5AE18264E}.Release|x86.Build.0 = Release|Win32
+		{E093AE2C-2E85-4833-8292-6EC26BF57F5C}.Debug|x64.ActiveCfg = Debug|x64
+		{E093AE2C-2E85-4833-8292-6EC26BF57F5C}.Debug|x64.Build.0 = Debug|x64
+		{E093AE2C-2E85-4833-8292-6EC26BF57F5C}.Debug|x86.ActiveCfg = Debug|Win32
+		{E093AE2C-2E85-4833-8292-6EC26BF57F5C}.Debug|x86.Build.0 = Debug|Win32
+		{E093AE2C-2E85-4833-8292-6EC26BF57F5C}.Release|x64.ActiveCfg = Release|x64
+		{E093AE2C-2E85-4833-8292-6EC26BF57F5C}.Release|x64.Build.0 = Release|x64
+		{E093AE2C-2E85-4833-8292-6EC26BF57F5C}.Release|x86.ActiveCfg = Release|Win32
+		{E093AE2C-2E85-4833-8292-6EC26BF57F5C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

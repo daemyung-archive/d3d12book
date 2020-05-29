@@ -143,7 +143,7 @@ LRESULT D3DApp::MsgProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
         // WM_SIZE는 사용자가 윈도우 크기를 변경할 때 보내집니다.
     case WM_SIZE:
         // 새로운 윈도우 크기를 저장합니다.
-        mClientWidth = LOWORD(lParam);
+        mClientWidth  = LOWORD(lParam);
         mClientHeight = HIWORD(lParam);
 
         if (md3dDevice)
@@ -312,7 +312,7 @@ void D3DApp::OnResize()
     D3D12_RESOURCE_DESC depthStencilDesc;
     depthStencilDesc.Dimension = D3D12_RESOURCE_DIMENSION_TEXTURE2D;
     depthStencilDesc.Alignment = 0;
-    depthStencilDesc.Width = mClientHeight;
+    depthStencilDesc.Width = mClientWidth;
     depthStencilDesc.Height = mClientHeight;
     depthStencilDesc.DepthOrArraySize = 1;
     depthStencilDesc.MipLevels = 1;
