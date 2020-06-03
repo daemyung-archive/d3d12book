@@ -27,6 +27,7 @@
 #include <cassert>
 #include "d3dx12.h"
 #include "DDSTextureLoader.h"
+#include "MathHelper.h"
 
 extern const int gNumFrameResources;
 
@@ -174,6 +175,58 @@ struct MeshGeometry
         VertexBufferUploader = nullptr;
         IndexBufferUploader = nullptr;
     }
+};
+
+struct MaterialConstants
+{
+    DirectX::XMFLOAT4 DiffuseAlbedo = {1.0f, 1.0f, 1.0f, 1.0f};
+    DirectX::XMFLOAT3 FresnelR0 = {0.01f, 0.01f, 0.01f};
+    float Roughness = 0.25f;
+
+    // 텍스쳐 맵핑에서 사용됩니다.
+    DirectX::XMFLOAT4X4 MatTransform = MathHelper::Identity4x4();
+};
+
+struct Light
+{
+    DirectX::XMFLOAT3 Strength = {0.5f, 0.5f, 0.5f};
+    float FalloffStart = 1.0;                         // Point, Spot 라이트만 사용합니다.
+    DirectX::XMFLOAT3 Direction = {0.0, -1.0f, 0.0f}; // Directional, Spot 라이트만 사용합니다.
+    float FalloffEnd = 10.0f;                         // Point, Spot 라이트만 사용합니다.
+    DirectX::XMFLOAT3 Position = {0.0f, 0.0f, 0.0f};  // Point, Spot 라이트만 사용합니다.
+    float SpotPower = 64.0f;                          // Spot 라이트만 사용합니다.
+};
+
+#define MaxLights 16
+
+// 예제에서 사용하기 위한 간단한 메터리얼 구조체입니다.
+// 실제 3D 엔진은 여러 메터리얼들을 상속받음으로써 생성됩니다.
+struct Material
+{
+    // 검색을 위한 고유한 메터리얼 이름입니다.
+    std::string Name;
+
+    // 이 메터리얼에 해당되는 상수 버퍼의 인덱스입니다.
+    int MatCBIndex;
+
+    // 디퓨즈 텍스쳐에 해당하는 SRV 힙의 인덱스입니다.
+    int DiffuseSrvHeapIndex = -1;
+
+    // 노말 텍스쳐에 해당하는 SRV 힙의 인덱스입니다.
+    int NormalSrvHeapIndex = -1;
+
+    // 메터리얼이 변경되었다는 것을 나타내는 더티 플래그입니다.
+    // 그리고 변경됬을 경우 상수 버퍼를 업데이트 해야합니다.
+    // 메터리얼 상수 버퍼는 매 프레임마다 존재하기 때문에 모든 프레임 리소스를
+    // 업데이트 해야합니다. 그러므로 메터리얼이 변경됬을 때 NumFramesDirty = gNumFrameResources로
+    // 설정해서 모든 프레임 리소스가 업데이트 되도록 해야합니다.
+    int NumFramesDirty = gNumFrameResources;
+
+    // 셰이딩에 사용되는 메터리얼 상수 버퍼 데이터입니다.
+    DirectX::XMFLOAT4 DiffuseAlbedo = {1.0f, 1.0f, 1.0f, 1.0f};
+    DirectX::XMFLOAT3 FresnelR0 = {0.01f, 0.01f, 0.01f};
+    float Roughness = 0.25f;
+    DirectX::XMFLOAT4X4 MatTransform = MathHelper::Identity4x4();
 };
 
 #ifndef ThrowIfFailed
