@@ -229,6 +229,17 @@ struct Material
     DirectX::XMFLOAT4X4 MatTransform = MathHelper::Identity4x4();
 };
 
+struct Texture
+{
+    // 검색을 위한 고유한 메터리얼 이름입니다.
+    std::string Name;
+
+    std::wstring Filename;
+
+    Microsoft::WRL::ComPtr<ID3D12Resource> Resource = nullptr;
+    Microsoft::WRL::ComPtr<ID3D12Resource> UploadHeap = nullptr;
+};
+
 #ifndef ThrowIfFailed
 #define ThrowIfFailed(x)                                              \
 {                                                                     \

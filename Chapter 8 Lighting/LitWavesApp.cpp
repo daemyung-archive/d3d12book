@@ -839,7 +839,7 @@ void LitWavesApp::DrawRenderItems(ID3D12GraphicsCommandList* cmdList, const std:
         D3D12_GPU_VIRTUAL_ADDRESS objCBAddress = objectCB->GetGPUVirtualAddress();
         objCBAddress += ri->ObjCBIndex * objCBByteSize;
         D3D12_GPU_VIRTUAL_ADDRESS matCBAddress = matCB->GetGPUVirtualAddress();
-        matCBAddress += ri->Mat->MatCBIndex * objCBByteSize;
+        matCBAddress += ri->Mat->MatCBIndex * matCBByteSize;
 
         cmdList->SetGraphicsRootConstantBufferView(0, objCBAddress);
         cmdList->SetGraphicsRootConstantBufferView(1, matCBAddress);
