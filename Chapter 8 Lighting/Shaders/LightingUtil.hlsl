@@ -41,7 +41,7 @@ float3 SchlickFresnel(float3 R0, float3 normal, float3 lightVec)
     return reflectPercent;
 }
 
-float BlinnPhong(float3 lightStrength, float3 lightVec, float3 normal, float3 toEye, Material mat)
+float3 BlinnPhong(float3 lightStrength, float3 lightVec, float3 normal, float3 toEye, Material mat)
 {
     const float m = mat.Shininess * 256.0f;
     float3 halfVec = normalize(toEye + lightVec);

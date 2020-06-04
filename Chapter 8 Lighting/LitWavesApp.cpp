@@ -485,8 +485,6 @@ void LitWavesApp::UpdateMaterialCBs(const GameTimer& gt)
         Material* mat = e.second.get();
         if (mat->NumFramesDirty > 0)
         {
-            XMMATRIX matTransform = XMLoadFloat4x4(&mat->MatTransform);
-
             MaterialConstants matConstants;
             matConstants.DiffuseAlbedo = mat->DiffuseAlbedo;
             matConstants.FresnelR0 = mat->FresnelR0;
@@ -772,7 +770,7 @@ void LitWavesApp::BuildMaterials()
     auto grass = std::make_unique<Material>();
     grass->Name = "grass";
     grass->MatCBIndex = 0;
-    grass->DiffuseAlbedo = XMFLOAT4(0.2f, 0.6f, 0.6f, 1.0f);
+    grass->DiffuseAlbedo = XMFLOAT4(0.2f, 0.6f, 0.2f, 1.0f);
     grass->FresnelR0 = XMFLOAT3(0.01f, 0.01f, 0.01f);
     grass->Roughness = 0.125f;
 
