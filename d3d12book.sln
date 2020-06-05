@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 8 Lighting", "Chapt
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 9 Texturing", "Chapter 9 Texturing\Chapter 9 Texturing.vcxproj", "{DC94DA00-F1DF-49AA-A686-54077D5638B8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 10 Blending", "Chapter 10 Blending\Chapter 10 Blending.vcxproj", "{68E59FCA-D9FF-49D1-B1E8-EADCA41BCB65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{DC94DA00-F1DF-49AA-A686-54077D5638B8}.Release|x64.Build.0 = Release|x64
 		{DC94DA00-F1DF-49AA-A686-54077D5638B8}.Release|x86.ActiveCfg = Release|Win32
 		{DC94DA00-F1DF-49AA-A686-54077D5638B8}.Release|x86.Build.0 = Release|Win32
+		{68E59FCA-D9FF-49D1-B1E8-EADCA41BCB65}.Debug|x64.ActiveCfg = Debug|x64
+		{68E59FCA-D9FF-49D1-B1E8-EADCA41BCB65}.Debug|x64.Build.0 = Debug|x64
+		{68E59FCA-D9FF-49D1-B1E8-EADCA41BCB65}.Debug|x86.ActiveCfg = Debug|Win32
+		{68E59FCA-D9FF-49D1-B1E8-EADCA41BCB65}.Debug|x86.Build.0 = Debug|Win32
+		{68E59FCA-D9FF-49D1-B1E8-EADCA41BCB65}.Release|x64.ActiveCfg = Release|x64
+		{68E59FCA-D9FF-49D1-B1E8-EADCA41BCB65}.Release|x64.Build.0 = Release|x64
+		{68E59FCA-D9FF-49D1-B1E8-EADCA41BCB65}.Release|x86.ActiveCfg = Release|Win32
+		{68E59FCA-D9FF-49D1-B1E8-EADCA41BCB65}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
