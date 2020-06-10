@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 10 Blending", "Chap
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 11 Stenciling", "Chapter 11 Stenciling\Chapter 11 Stenciling.vcxproj", "{473F7D66-0F75-4599-AD0B-A56C1D0C7660}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 13 The Compute Shader", "Chapter 13 The Compute Shader\Chapter 13 The Compute Shader.vcxproj", "{08E58512-AB6C-4DD3-B662-A6B0FCAC190B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{473F7D66-0F75-4599-AD0B-A56C1D0C7660}.Release|x64.Build.0 = Release|x64
 		{473F7D66-0F75-4599-AD0B-A56C1D0C7660}.Release|x86.ActiveCfg = Release|Win32
 		{473F7D66-0F75-4599-AD0B-A56C1D0C7660}.Release|x86.Build.0 = Release|Win32
+		{08E58512-AB6C-4DD3-B662-A6B0FCAC190B}.Debug|x64.ActiveCfg = Debug|x64
+		{08E58512-AB6C-4DD3-B662-A6B0FCAC190B}.Debug|x64.Build.0 = Debug|x64
+		{08E58512-AB6C-4DD3-B662-A6B0FCAC190B}.Debug|x86.ActiveCfg = Debug|Win32
+		{08E58512-AB6C-4DD3-B662-A6B0FCAC190B}.Debug|x86.Build.0 = Debug|Win32
+		{08E58512-AB6C-4DD3-B662-A6B0FCAC190B}.Release|x64.ActiveCfg = Release|x64
+		{08E58512-AB6C-4DD3-B662-A6B0FCAC190B}.Release|x64.Build.0 = Release|x64
+		{08E58512-AB6C-4DD3-B662-A6B0FCAC190B}.Release|x86.ActiveCfg = Release|Win32
+		{08E58512-AB6C-4DD3-B662-A6B0FCAC190B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
