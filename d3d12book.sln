@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 11 Stenciling", "Ch
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 13 The Compute Shader", "Chapter 13 The Compute Shader\Chapter 13 The Compute Shader.vcxproj", "{08E58512-AB6C-4DD3-B662-A6B0FCAC190B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 15 First Person Camera and Dynamic Indexing", "Chapter 15 First Person Camera and Dynamic Indexing\Chapter 15 First Person Camera and Dynamic Indexing.vcxproj", "{96F17AE9-4A0A-44DC-8447-0D12E7476508}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{08E58512-AB6C-4DD3-B662-A6B0FCAC190B}.Release|x64.Build.0 = Release|x64
 		{08E58512-AB6C-4DD3-B662-A6B0FCAC190B}.Release|x86.ActiveCfg = Release|Win32
 		{08E58512-AB6C-4DD3-B662-A6B0FCAC190B}.Release|x86.Build.0 = Release|Win32
+		{96F17AE9-4A0A-44DC-8447-0D12E7476508}.Debug|x64.ActiveCfg = Debug|x64
+		{96F17AE9-4A0A-44DC-8447-0D12E7476508}.Debug|x64.Build.0 = Debug|x64
+		{96F17AE9-4A0A-44DC-8447-0D12E7476508}.Debug|x86.ActiveCfg = Debug|Win32
+		{96F17AE9-4A0A-44DC-8447-0D12E7476508}.Debug|x86.Build.0 = Debug|Win32
+		{96F17AE9-4A0A-44DC-8447-0D12E7476508}.Release|x64.ActiveCfg = Release|x64
+		{96F17AE9-4A0A-44DC-8447-0D12E7476508}.Release|x64.Build.0 = Release|x64
+		{96F17AE9-4A0A-44DC-8447-0D12E7476508}.Release|x86.ActiveCfg = Release|Win32
+		{96F17AE9-4A0A-44DC-8447-0D12E7476508}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
