@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 13 The Compute Shad
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 15 First Person Camera and Dynamic Indexing", "Chapter 15 First Person Camera and Dynamic Indexing\Chapter 15 First Person Camera and Dynamic Indexing.vcxproj", "{96F17AE9-4A0A-44DC-8447-0D12E7476508}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 16 Instancing and Frustum Culling", "Chapter 16 Instancing and Frustum Culling\Chapter 16 Instancing and Frustum Culling.vcxproj", "{49AEFB19-E16A-4DEA-B3E0-4AC1A41B99E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{96F17AE9-4A0A-44DC-8447-0D12E7476508}.Release|x64.Build.0 = Release|x64
 		{96F17AE9-4A0A-44DC-8447-0D12E7476508}.Release|x86.ActiveCfg = Release|Win32
 		{96F17AE9-4A0A-44DC-8447-0D12E7476508}.Release|x86.Build.0 = Release|Win32
+		{49AEFB19-E16A-4DEA-B3E0-4AC1A41B99E9}.Debug|x64.ActiveCfg = Debug|x64
+		{49AEFB19-E16A-4DEA-B3E0-4AC1A41B99E9}.Debug|x64.Build.0 = Debug|x64
+		{49AEFB19-E16A-4DEA-B3E0-4AC1A41B99E9}.Debug|x86.ActiveCfg = Debug|Win32
+		{49AEFB19-E16A-4DEA-B3E0-4AC1A41B99E9}.Debug|x86.Build.0 = Debug|Win32
+		{49AEFB19-E16A-4DEA-B3E0-4AC1A41B99E9}.Release|x64.ActiveCfg = Release|x64
+		{49AEFB19-E16A-4DEA-B3E0-4AC1A41B99E9}.Release|x64.Build.0 = Release|x64
+		{49AEFB19-E16A-4DEA-B3E0-4AC1A41B99E9}.Release|x86.ActiveCfg = Release|Win32
+		{49AEFB19-E16A-4DEA-B3E0-4AC1A41B99E9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
