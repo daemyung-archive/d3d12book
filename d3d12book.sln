@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 15 First Person Cam
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 16 Instancing and Frustum Culling", "Chapter 16 Instancing and Frustum Culling\Chapter 16 Instancing and Frustum Culling.vcxproj", "{49AEFB19-E16A-4DEA-B3E0-4AC1A41B99E9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 17 Picking", "Chapter 17 Picking\Chapter 17 Picking.vcxproj", "{31921798-B457-4F3B-8FFC-D64E7E374FB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{49AEFB19-E16A-4DEA-B3E0-4AC1A41B99E9}.Release|x64.Build.0 = Release|x64
 		{49AEFB19-E16A-4DEA-B3E0-4AC1A41B99E9}.Release|x86.ActiveCfg = Release|Win32
 		{49AEFB19-E16A-4DEA-B3E0-4AC1A41B99E9}.Release|x86.Build.0 = Release|Win32
+		{31921798-B457-4F3B-8FFC-D64E7E374FB9}.Debug|x64.ActiveCfg = Debug|x64
+		{31921798-B457-4F3B-8FFC-D64E7E374FB9}.Debug|x64.Build.0 = Debug|x64
+		{31921798-B457-4F3B-8FFC-D64E7E374FB9}.Debug|x86.ActiveCfg = Debug|Win32
+		{31921798-B457-4F3B-8FFC-D64E7E374FB9}.Debug|x86.Build.0 = Debug|Win32
+		{31921798-B457-4F3B-8FFC-D64E7E374FB9}.Release|x64.ActiveCfg = Release|x64
+		{31921798-B457-4F3B-8FFC-D64E7E374FB9}.Release|x64.Build.0 = Release|x64
+		{31921798-B457-4F3B-8FFC-D64E7E374FB9}.Release|x86.ActiveCfg = Release|Win32
+		{31921798-B457-4F3B-8FFC-D64E7E374FB9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
